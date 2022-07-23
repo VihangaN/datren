@@ -1,51 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!--custom css file link-->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./style.css" />
     <title>Datren</title>
 
     <!--font awesome cdn link-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
 
-<body>
+  <body>
     <!--navigation bar start-->
     <header>
+      <a href="index.html" class="logo">
+        <img src="./logo.png" width="120px"
+      /></a>
 
-        <a href="index.html" class="logo"> <img src="images/logo.png" width="120px"></a>
+      <div class="navbar">
+        <a class="active" href="#home">Home</a>
+        <a href="#product">about us</a>
+        <a href="#about">services</a>
+        <a href="#location">project</a>
+        <a href="#gallery">contract us</a>
+      </div>
 
-        <div class="navbar">
-            <a class="active" href="#home">Home</a>
-            <a href="#product">about us</a>
-            <a href="#about">services</a>
-            <a href="#location">project</a>
-            <a href="#gallery">contract us</a>
-        </div>
-
-        <div class="icons">
-            <i class="fas fa-bars" id="menu-bars"></i>
-        </div>
+      <div class="icons">
+        <i class="fas fa-bars" id="menu-bars"></i>
+      </div>
     </header>
     <!--navigation bar ends-->
 
     <!--home section start-->
-    <div class="text-box">
-        <p>Do you think something? We can create it</p>
-        <h1>we can do</h1>
+
+    <!-- added by vihanga -->
+
+    <div class="hero_base">
+      <div class="hero_left">
+        <div class="text-box">
+          <p>Do you think something? We can create it</p>
+          <h1>we can do</h1>
+        </div>
+      </div>
+      <div class="hero-right">
+        <img src="./home-1.png" class="user-img" />
+      </div>
     </div>
-    <img src="images/home-1.png" class="user-img">
+
     <!--home section ends-->
 
-
     <!-- custom JavaScript file -->
-    <script src="js/app.js"></script>
-
-</body>
-
+    <script src="./app.js"></script>
+  </body>
 </html>

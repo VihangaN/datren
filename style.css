@@ -87,29 +87,138 @@ header .icons #menu-bars {
     background: var(--color3);
 }
 
-.text-box {
-    margin-top: -5%;
-    font-size: 17px;
-    letter-spacing: 1px;
-    line-height: 26px;
-    margin-right: 50rem;
+
+
+/* added by vihanga */
+
+.hero_base{
+    width:100%;
+    height:100vh;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+   
 }
 
-.text-box h1 {
-    font-size: 75px;
-    line-height: 160px;
-    color: var(--color1);
+.hero_left{
+    width:100%;
+    display:flex;
+    align-items:flex-start;
+    justify-content: center;
+    flex-direction:column;
+    box-sizing: border-box;
 }
 
-.text-box p {
-    font-size: 2.5rem;
+.hero-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+}
+
+.text-box h1{
+    font-size:5vw;
+    line-height: 7vw;
     color: var(--color1);
-    margin-right: -25rem;
+}
+.text-box p{
+    font-size:2vw;
+    color: var(--color1);
 }
 
 .user-img {
-    margin-right: 10rem;
+    width:70%;
+ }
+
+/* media queries */
+
+@media only screen and (max-width:1366px){
+   .hero_base{
+    grid-template-columns: 1fr;
+   }
+   .hero_left{
+    width:100%;
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+    box-sizing: border-box;
+    text-align: center;
+    order:1;
+    justify-content: flex-start;
 }
+
+
+.text-box{
+    padding:0;
+}
+.text-box h1{
+    font-size:10vw;
+    line-height: 7vw;
+    margin-top:1rem;
+    /* color: var(--color1); */
+}
+.text-box p{
+    font-size:4vw;
+    color: var(--color1);
+}
+
+.user-img {
+    width:50% ;
+ }
+
+}
+
+@media only screen and (max-width:978px){
+    .user-img {
+        width:70% ;
+     }
+
+}
+
+
+/* --------------- */
+
+
+/* @media only screen and (max-width:1500px){
+    .text-box h1{
+        font-size:6vw;
+        line-height: 7vw;
+        color: var(--color1);
+    }
+    .text-box p{
+        font-size:2vw;
+        color: var(--color1);
+    }
+    .user-img {
+        transform:scale(.7);
+    }
+ }
+  */
+
+
+.text-box {
+    /* margin-top: -5%;
+    font-size: 17px;
+    letter-spacing: 1px;
+    line-height: 26px;
+    margin-right: 50rem; */
+    width:100%;
+    box-sizing: border-box;
+    padding:0 0 0 3.5rem;
+}
+
+/* .text-box h1 {
+    font-size: 75px;
+    line-height: 160px;
+    color: var(--color1);
+} */
+
+/* .text-box p {
+    font-size: 2.5rem;
+    color: var(--color1);
+    margin-right: -25rem;
+} */
+
+
 
 
 
